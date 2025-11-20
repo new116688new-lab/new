@@ -1,0 +1,31 @@
+
+* { box-sizing: border-box; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", sans-serif; margin:0; background: linear-gradient(#fff8ec, #f6f9ff); color:#222; }
+.scene { max-width:900px; margin:12px auto; padding:12px; }
+header { text-align:center; }
+h1 { margin:6px 0; font-size:22px; }
+.subtitle { margin:0 0 12px; color:#666; }
+
+main { display:flex; gap:14px; align-items:center; justify-content:center; flex-direction:column; }
+
+.boss { width:360px; background:#fff; border-radius:12px; box-shadow:0 8px 20px rgba(0,0,0,0.08); padding:14px; text-align:center; }
+.boss-name { font-weight:700; }
+.hp { height:16px; background:#eee; border-radius:8px; margin:10px 20px; overflow:hidden; }
+.hp-bar { height:100%; width:100%; background:linear-gradient(90deg,#ff8a8a,#ff4d4d); transition:width 300ms ease; }
+
+.boss-sprite { font-size:72px; margin-top:6px; }
+
+.hero-area { display:flex; gap:14px; align-items:center; flex-direction:column; margin-top:8px; }
+.hero-photo { width:120px; height:120px; object-fit:cover; border-radius:50%; border:6px solid #fff; box-shadow:0 8px 18px rgba(0,0,0,0.12); }
+.controls { display:flex; gap:10px; }
+
+.big-btn { font-size:20px; padding:12px 22px; border-radius:12px; background:#ff7a7a; color:#fff; border:none; box-shadow:0 6px 14px rgba(255,122,122,0.32); }
+.small-btn { font-size:14px; padding:8px 12px; border-radius:10px; background:#ffd27a; color:#222; border:none; }
+
+.message { margin-top:10px; font-size:18px; font-weight:600; color:#2d6a4f; min-height:28px; }
+
+footer { text-align:center; margin-top:12px; color:#888; }
+
+/* confetti canvas full-screen overlay */
+#confetti { position:fixed; left:0; top:0; width:100%; height:100%; pointer-events:none; z-index:9999; }
+@media (min-width:900px){ .scene { padding:24px; } }

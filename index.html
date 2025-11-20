@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>小奧特曼 侑熙 - 生日打怪獸</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="scene">
+    <header>
+      <h1>🎉 生日快樂 侑熙！小奧特曼出動！ 🎉</h1>
+      <p class="subtitle">打倒生日大魔王，蛋糕就會出現！</p>
+    </header>
+
+    <main>
+      <div id="boss" class="boss">
+        <div class="boss-name">生日大魔王</div>
+        <div class="hp"><div id="hpBar" class="hp-bar"></div></div>
+        <div class="boss-sprite">👾</div>
+      </div>
+
+      <div class="hero-area">
+        <img id="heroImg" src="images/child.png" alt="小奧特曼侑熙" class="hero-photo">
+        <div class="controls">
+          <button id="attackBtn" class="big-btn">攻擊</button>
+          <button id="cheerBtn" class="small-btn">加油！</button>
+        </div>
+      </div>
+
+      <div id="message" class="message" aria-live="polite"></div>
+    </main>
+
+    <canvas id="confetti"></canvas>
+
+    <footer>
+      <small>為 3 歲設計 • 可愛 Q 版英雄</small>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
